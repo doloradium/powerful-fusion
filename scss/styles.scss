@@ -335,6 +335,26 @@ body {
     }
 }
 
+.info {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-between;
+    }
+    &__block {
+        flex-basis: 45%;
+        margin-bottom: 20px;
+        @media screen and (max-width: 650px) {
+            flex-basis: 100%;
+            text-align: center;
+        }
+    }
+    &__heading {
+        font-weight: bold;
+    }
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -342,7 +362,7 @@ body {
     flex-shrink: 0;
     width: 100%;
     margin-bottom: 0;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     &__container {
         display: flex;
         justify-content: space-between;
