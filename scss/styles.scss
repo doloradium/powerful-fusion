@@ -23,13 +23,55 @@ body {
     }
 }
 
-.heading-1 {
-    font-size: 28px;
-    margin-bottom: 50px;
-    text-align: center;
-    cursor: default;
-    @media screen and (max-width: 400px) {
-        word-wrap: break-word;
+.heading {
+    &-1 {
+        font-size: 28px;
+        margin-bottom: 40px;
+        text-align: center;
+        cursor: default;
+        @media screen and (max-width: 400px) {
+            word-wrap: break-word;
+        }
+        @media screen and (max-width: 650px) {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+    }
+    &-articles {
+        margin-bottom: 40px;
+    }
+}
+
+.article {
+    &__text {
+        margin-bottom: 40px;
+        & span {
+            font-weight: bold;
+        }
+    }
+    &__pic {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        object-fit: cover;
+        max-height: 500px;
+        margin-bottom: 40px;
+        @media screen and (max-width: 650px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__item {
+        list-style-type: decimal;
+        padding-left: 20px;
+        margin: 10px 0 10px 20px;
+        & span {
+            font-weight: bold;
+        }
+    }
+    &__item-circular {
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
     }
 }
 
@@ -45,6 +87,10 @@ body {
     display: inline-block;
     border: 1px solid #E3F5F5;
     border-radius: 5px;
+    @media screen and (max-width: 850px) {
+        width: 100%;
+        text-align: center;
+    }
     @media screen and (max-width: 800px) {
         margin-bottom: 10px;
     }
@@ -120,9 +166,13 @@ body {
         font-size: 14px;
         display: inline-block;
         cursor: default;
+        min-width: 325px;
         @media screen and (max-width: 800px) {
             margin-left: 0;
             margin-bottom: 10px;
+        }
+        @media screen and (max-width: 450px) {
+            min-width: 0;
         }
         & span {
             font-weight: bold;
@@ -191,7 +241,7 @@ body {
     max-width: fit-content;
     color: #202542;
     margin-bottom: 30px;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1005px) {
         display: none;
     }
     &__icon {
@@ -218,6 +268,10 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    margin-top: 60px;
+    @media screen and (max-width: 1005px) {
+        margin-top: 0;
+    }
     @media screen and (max-width: 590px) {
         margin-top: -30px;
     }
@@ -262,6 +316,7 @@ body {
         font-size: 18px;
         font-weight: 600;
         color: #E3F5F5;
+        width: 90%;
     }
     &__color {
         background: linear-gradient(45deg, #244069, #337DB3);
@@ -319,13 +374,53 @@ body {
 }
 
 .table {
+    table-layout: fixed;
     text-align: left;
     border: 1px solid #E3F5F5;
     border-radius: 5px;
     width: 100%;
     margin-bottom: 50px;
-    &:last-child {
-        margin-bottom: 150px;
+    @media screen and (max-width: 650px) {
+        margin-bottom: 20px;
+    }
+    &__desktop {
+        display: block;
+        @media screen and (max-width: 850px) {
+            display: none;
+        }
+        &:last-child {
+            margin-bottom: 150px;
+            @media screen and (max-width: 650px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__mobile {
+        border-radius: 5px;
+        border: 1px solid #E3F5F5;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        @media screen and (max-width: 850px) {
+            display: block;
+        }
+    }
+    &__block {
+        border-bottom: 1px solid #E3F5F5;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__name {
+        border-bottom: 1px solid #E3F5F5;
+        padding: 15px 20px;
+        min-width: 180px;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__info {
+        padding: 15px 20px;
     }
     &__row {
         @media screen and (max-width: 610px) {
@@ -334,17 +429,22 @@ body {
         }
     }
     &__column {
-        padding: 20px;
+        padding: 15px 20px;
         border-bottom: 1px solid #E3F5F5;
         border-left: 1px solid #E3F5F5;
         word-wrap: break-word;
         @media screen and (max-width: 610px) {
             border-left: none;
+            word-break: break-all;
+        }
+        @media screen and (max-width: 370px) {
+            word-break: break-all;
         }
     }
     &__heading {
         padding: 20px;
         border-bottom: 1px solid #E3F5F5;
+        word-wrap: break-word;
         @media screen and (max-width: 610px) {
             text-align: center;
         }
@@ -354,6 +454,9 @@ body {
         border-left: 1px solid #E3F5F5;
         border-bottom: none;
         word-wrap: break-word;
+        @media screen and (max-width: 370px) {
+            word-break: break-all;
+        }
         &:first-child {
             border-left: none;
         }
@@ -373,6 +476,9 @@ body {
         @media screen and (max-width: 610px) {
             border-left: none;
         }
+        @media screen and (max-width: 370px) {
+            word-break: break-all;
+        }
         &:first-child {
             border-left: none;
             border-bottom: none;
@@ -386,6 +492,12 @@ body {
         @media screen and (max-width: 610px) {
             width: 100%;
         }
+    }
+    &-break {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        table-layout: auto;       
     }
 }
 
