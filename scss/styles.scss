@@ -89,8 +89,9 @@ body {
         width: 100%;
         text-align: center;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         margin-bottom: 20px;
+        padding: 7px 0px;
     }
     &__color {
         background: linear-gradient(45deg, #244069, #337DB3);
@@ -105,7 +106,7 @@ body {
     }
     &__base {
         color: #E3F5F5;
-        padding: 10px 20px;
+        padding: 7px 20px;
         font-size: 14px;
         transition-property: background-position, color;
         transition-duration: 0.5s;
@@ -124,12 +125,12 @@ body {
     justify-content: space-between;
     padding: 30px 20px; 
     margin-bottom: 30px;
-    @media screen and (max-width: 800px) {
-        padding: 30px 40px; 
+    @media screen and (max-width: 850px) {
+        padding: 30px 20px; 
     }
     &__container {
         text-align: right;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             text-align: center;
             display: flex;
             flex-direction: column-reverse;
@@ -138,7 +139,7 @@ body {
     &__block {
         display: flex;
         justify-content: space-between;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             display: flex;
             text-align: center;
             margin: auto;
@@ -151,12 +152,12 @@ body {
         margin-bottom: 15px;
         font-size: 18px;
         cursor: default;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             text-align: center;
         }
     }
     &__address {
-        padding: 10px 20px;
+        padding: 7px 20px;
         border-radius: 5px;
         border: 1px solid #E3F5F5;
         margin-left: 20px;
@@ -164,9 +165,10 @@ body {
         display: inline-block;
         cursor: default;
         min-width: 325px;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
             margin-left: 0;
             margin-bottom: 20px;
+            padding: 14px 20px;
         }
         @media screen and (max-width: 450px) {
             min-width: 0;
@@ -175,7 +177,7 @@ body {
             font-weight: bold;
         }   
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         flex-direction: column;
     }
 }
@@ -187,7 +189,7 @@ body {
         display: block;
         width: 160px;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         margin: 0 auto 20px;
     }
 }
