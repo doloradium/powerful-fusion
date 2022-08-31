@@ -110,12 +110,6 @@ body {
   padding: 0 20px;
 }
 
-@media screen and (max-width: 800px) {
-  .wrapper {
-    padding: 0 40px;
-  }
-}
-
 .heading-1 {
   font-size: 28px;
   margin-bottom: 40px;
@@ -181,15 +175,16 @@ body {
 }
 
 .button {
+  display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-decoration: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
   overflow: hidden;
-  padding: 5px 15px;
   color: #E3F5F5;
   font-weight: bold;
   text-transform: uppercase;
@@ -207,7 +202,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .button {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -225,9 +220,8 @@ body {
 }
 
 .button__base {
-  text-decoration: none;
   color: #E3F5F5;
-  padding: 5px 15px;
+  padding: 5px 20px;
   font-size: 14px;
   -webkit-transition-property: background-position, color;
   transition-property: background-position, color;
@@ -330,7 +324,7 @@ body {
 @media screen and (max-width: 800px) {
   .header__address {
     margin-left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 

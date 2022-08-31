@@ -18,9 +18,6 @@ body {
     max-width: 1140px;
     margin: auto;
     padding: 0 20px;
-    @media screen and (max-width: 800px) {
-        padding: 0 40px;
-    }
 }
 
 .heading {
@@ -76,11 +73,12 @@ body {
 }
 
 .button {
+    display: inline-block;
     display: flex;
+    text-decoration: none;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
-    padding: 5px 15px;
     color: #E3F5F5;
     font-weight: bold;
     text-transform: uppercase;
@@ -92,7 +90,7 @@ body {
         text-align: center;
     }
     @media screen and (max-width: 800px) {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     &__color {
         background: linear-gradient(45deg, #244069, #337DB3);
@@ -106,9 +104,8 @@ body {
         z-index: -1;
     }
     &__base {
-        text-decoration: none;
         color: #E3F5F5;
-        padding: 5px 15px;
+        padding: 5px 20px;
         font-size: 14px;
         transition-property: background-position, color;
         transition-duration: 0.5s;
@@ -169,7 +166,7 @@ body {
         min-width: 325px;
         @media screen and (max-width: 800px) {
             margin-left: 0;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         @media screen and (max-width: 450px) {
             min-width: 0;
