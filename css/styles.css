@@ -221,7 +221,7 @@ body {
 
 .button__base {
   color: #E3F5F5;
-  padding: 5px 20px;
+  padding: 10px 20px;
   font-size: 14px;
   -webkit-transition-property: background-position, color;
   transition-property: background-position, color;
@@ -311,7 +311,7 @@ body {
 }
 
 .header__address {
-  padding: 5px 15px;
+  padding: 10px 20px;
   border-radius: 5px;
   border: 1px solid #E3F5F5;
   margin-left: 20px;
