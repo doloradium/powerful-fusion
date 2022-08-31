@@ -40,8 +40,11 @@ body {
 }
 
 .article {
-    &__text {
+    &__block {
         margin-bottom: 40px;
+    }
+    &__text {
+        margin-bottom: 20px;
         & span {
             font-weight: bold;
         }
@@ -52,9 +55,32 @@ body {
         border-radius: 5px;
         object-fit: cover;
         max-height: 500px;
-        margin-bottom: 40px;
-        @media screen and (max-width: 650px) {
-            margin-bottom: 20px;
+        margin-bottom: 20px;
+        &-all {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr); 
+            @media screen and (max-width: 850px) {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+            @media screen and (max-width: 450px) {
+                grid-template-columns: repeat(1, 1fr); 
+            }
+        }
+        &-certificate {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr); 
+            @media screen and (max-width: 850px) {
+                grid-template-columns: repeat(1, 1fr); 
+            }
+        }
+        &-mini {
+            object-fit: cover;
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #E3F5F5;
         }
     }
     &__item {
