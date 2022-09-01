@@ -524,6 +524,11 @@ body {
         word-break: break-all;
         table-layout: auto;       
     }
+    &__pic {
+        min-width: 10px;
+        max-width: 150px;
+        margin: 0 auto;
+    }
 }
 
 .benefits {
