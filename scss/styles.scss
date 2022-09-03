@@ -465,6 +465,9 @@ body {
         @media screen and (max-width: 370px) {
             word-break: break-all;
         }
+        &-wide {
+            width: 30%;
+        }
     }
     &__heading {
         padding: 20px;
