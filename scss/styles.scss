@@ -375,7 +375,7 @@ body {
 .video {
     border-radius: 5px;
     width: 100%;
-    height: 600px;
+    height: 500px;
     object-fit: cover;
     margin-top: 20px;
     margin-bottom: 0;
@@ -396,7 +396,7 @@ body {
         }
         &-2 {
             grid-template-columns: repeat(2, 1fr); 
-            @media screen and (max-width: 750px) {
+            @media screen and (max-width: 850px) {
                 grid-template-columns: repeat(1, 1fr); 
             }
         }
@@ -407,6 +407,12 @@ body {
         border-radius: 5px;
         height: 100%;
         object-fit: cover;
+        max-height: 500px;
+        &-big {
+            @media screen and (max-width: 850px) {
+                height: 500px; 
+            }
+        }
     }
 }
 
