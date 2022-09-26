@@ -9,6 +9,15 @@ html, body {
     }
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
 .wrapper {
     max-width: 1140px;
     margin: auto;
